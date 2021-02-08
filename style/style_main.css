@@ -251,6 +251,7 @@ main
 .services_t
 {
 	max-width: 340px;
+	height: 200px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 20px;
@@ -258,7 +259,7 @@ main
 
 .img_s
 {
-	height: auto;
+	height: 100%;
 	width: 100%;
 }
 
