@@ -2,33 +2,33 @@
 {
 	$(".toggle").on("click", function()
 	{
-		if ($(".item").hasClass("active"))
-			$(".item").removeClass("active");
+		if ($(".menu_item").hasClass("active"))
+			$(".menu_item").removeClass("active");
 		else
-			$(".item").addClass("active");
+			$(".menu_item").addClass("active");
 	});
 });*/
 
 $(document).ready(function()
 {
-	$(".toggle").on("click", function()
+	$(".menu_toggle").on("click", function()
 	{
-		if ($(".item").hasClass("active"))
-			$(".item").removeClass("active");
+		if ($(".menu_item").hasClass("active"))
+			$(".menu_item").removeClass("active");
 		else
-			$(".item").addClass("active");
+			$(".menu_item").addClass("active");
 	});
 
 	$("main").click(function()
 	{
-		if ($(".item").hasClass("active"))
-			$(".item").removeClass("active");
+		if ($(".menu_item").hasClass("active"))
+			$(".menu_item").removeClass("active");
 		
 	});
 	$("footer").click(function()
 	{
-		if ($(".item").hasClass("active"))
-			$(".item").removeClass("active");
+		if ($(".menu_item").hasClass("active"))
+			$(".menu_item").removeClass("active");
 		
 	});
 

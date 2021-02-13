@@ -1,49 +1,49 @@
 
 body
 {
-	font-family: 'Roboto';
 	font-style: normal;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	background-color: rgb(255, 255, 255);
-	padding: 0;
-	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-.nav_p
-{
-	
-	/*min-inline-size: 450px;*/
 
+/****************************** NAV ***************************/
+
+
+nav
+{
 	width: 100%;
 	position: fixed;
-	background-color: rgb(255, 255, 255);
+	background-color:white;
 	opacity: 0.98;
+	padding-top: 0;
 }
 
-.img_logo
+.menu_logo_img
 {
 	height: 80px;
 	width:80px;
 }
 
-.item a
-{
-	color: rgb(0, 0, 0);
+.menu_item a
+{	
 	text-decoration: none;
-	
+	color: rgb(36, 36, 36);
 }
 
-/**************************************************************************/
-
-.menu li
+.nav_menu li
 {
-	font-size: 16px;
+	font-size: 18px;
 	white-space: nowrap;
-	
 }
 
-/* Mobile menu */
+/* Mobile nav_menu */
 
-.menu
+.nav_menu
 {
 	max-width: 1100px;
 	display: flex;
@@ -55,7 +55,7 @@ body
 	margin-bottom: 0px;
 }
 
-.toggle
+.menu_toggle
 {
 	order: 1;
 	cursor:pointer;
@@ -65,7 +65,7 @@ body
 	align-items: center;
 }
 
-.item
+.menu_item
 {
 	width: 100%;
 	padding-top: 10px;
@@ -79,23 +79,23 @@ body
 	border-width: 1px;
 }
 
-.logo
+.menu_logo
 {
 	flex: 1;
 	order:0;
 	height: 80px;
 }
 
-.item.active
+.menu_item.active
 {
 	display: block;
 }
 
 /* Navbar Toggle */
 
-.bars
+.toggle_bars
 {
-	background: rgb(110, 99, 99);
+	background: rgb(36, 36, 36);
 	display: inline-block;
 	height: 4px;
 	position: relative;
@@ -103,10 +103,10 @@ body
 
 }
 
-.bars:before,
-.bars:after
+.toggle_bars:before,
+.toggle_bars:after
 {
-	background-color: rgb(252, 217, 29);
+	background-color: rgb(240, 216, 78);
 	content: '';
 	display: block;
 	height: 100%;
@@ -114,29 +114,29 @@ body
 	width: 100%;
 }
 
-.bars:before
+.toggle_bars:before
 {
 	top: 8px;
 }
 
-.bars:after
+.toggle_bars:after
 {
 	top: -8px;
 }
 
-
-/* Desktop menu */
+/* Desktop nav_menu */
 @media all and (min-width: 768px)
 {
 
 
-	.toggle
+	.menu_toggle
 	{
 		display: none;
 	}
 	
-	.item
+	.menu_item
 	{
+		background-color: rgb(255, 255, 255);
 		border-style:none;
 		display:flex;
 		justify-content:center;
@@ -144,7 +144,7 @@ body
 		width: fit-content;
 	}
 	
-	.menu li
+	.nav_menu li
 	{
 		margin-right: 25px;
 		margin-left: 0px;
@@ -152,43 +152,55 @@ body
 
 	}
 }
-/**************************************************************************/
+/****************************** MAIN ***************************/
 
-/*Part 1 */
+
 
 main
 {
 	padding-top: 80px;
 }
-.img_security
+
+/*Presentation*/
+
+.container_presentation
+{
+	max-inline-size:1100px ;
+	margin-right: auto;
+	margin-left: auto;
+	
+	margin-top: 0px;
+	margin-bottom: 30px;
+	
+}
+
+.presentation_img
 {
 	width: 100%;
 }
 
-.text_presentation
+.presentation_text
 {
-	max-inline-size:1100px ;
-	/*min-inline-size: 450px;*/
-
-	margin-inline-end: auto;
-	margin-inline-start: auto;
+	max-inline-size:1000px ;
 	color:rgb(95, 95, 95);
-	font-weight: 300;
-	padding: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;	
 }
 
-.text_presentation h1
+.presentation_text h1
 {
 	text-align: center;
-	font-weight: 300;
-
 }
-.text_presentation p
+.presentation_text p
 {
 	text-align: left;
 }
-/*Part 2 */
-.text_services
+
+/*Services*/
+
+.container_services
 {
 	max-inline-size:1100px ;
 	margin-left: auto;
@@ -198,16 +210,17 @@ main
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	padding: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-.t_services_img
+.services_img
 {
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .img_car
@@ -216,29 +229,46 @@ main
 	width: 100%;
 }
 
-.t_services_text
+.services_text
 {
 	max-inline-size:500px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-right: 10px;
+	padding-left: 10px;
 }
-
-.line_text
+.services_list li
 {
-	
-	max-width:1100px ;
-	height: auto;
-	background-color: rgb(252, 217, 29);
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 10px 0px
+}
+.services_select
+{
+	margin-top: 23px;
+	margin-bottom:0px;
 	text-align: center;
-	font-size: 30px;
-	font-weight: 300;
 }
 
-.services
+
+.button_services
+{
+	border: none;
+	border-radius: 25px;
+	color: rgb(0, 0, 0);
+	padding: 15px;
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: rgb(252, 217, 29);
+	outline:none;
+}
+
+/*Types Services*/
+
+.container_type_services
 {
 	max-width:1100px ;
 	display: flex;
@@ -251,7 +281,7 @@ main
 .services_t
 {
 	max-width: 340px;
-	height: 200px;
+	height: auto;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 20px;
@@ -263,9 +293,8 @@ main
 	width: 100%;
 }
 
+/****************************** FOOTER ***************************/
 
-
-/**************************************************************************/
 
 .container_footer
 {
@@ -274,10 +303,13 @@ main
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
+	width: 100%;
+	max-inline-size:2000px ;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.box_footer
+.footer_box
 {
 	width: 100%;
 	list-style-type: none;
@@ -287,29 +319,29 @@ main
 
 }
 
-.ul_list
+.box_list
 {
 	list-style-type: none;
 	padding-left: 0px;
-
 }
 
-.ul_list a
+.box_list a
 {
 	text-decoration: none;
 	color: rgb(65, 65, 65);
 	margin-bottom: auto;
 }
 
-.ul_list li
+.box_list li
 {
 	font-size: 14px;
 	margin-top: 12px;
 }
-/* Desktop menu */
+
+/* Desktop nav_menu */
 @media all and (min-width: 768px)
 {
-	.box_footer
+	.footer_box
 	{
 		width: 33%;
 		list-style-type: none;
