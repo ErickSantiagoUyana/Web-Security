@@ -18,7 +18,7 @@ nav
 {
 	width: 100%;
 	position: fixed;
-	background-color:white;
+	background-color:rgb(168, 0, 0);
 	opacity: 0.98;
 	padding-top: 0;
 }
@@ -30,14 +30,13 @@ nav
 }
 
 .menu_item a
-{	
+{
 	text-decoration: none;
 	color: rgb(36, 36, 36);
 }
 
 .nav_menu li
 {
-	font-size: 18px;
 	white-space: nowrap;
 }
 
@@ -100,7 +99,6 @@ nav
 	height: 4px;
 	position: relative;
 	width: 28px;
-
 }
 
 .toggle_bars:before,
@@ -133,7 +131,7 @@ nav
 	{
 		display: none;
 	}
-	
+
 	.menu_item
 	{
 		background-color: rgb(255, 255, 255);
@@ -143,7 +141,7 @@ nav
 		align-items: center;
 		width: fit-content;
 	}
-	
+
 	.nav_menu li
 	{
 		margin-right: 25px;
@@ -159,19 +157,18 @@ nav
 main
 {
 	padding-top: 80px;
+
 }
 
 /*Presentation*/
 
 .container_presentation
 {
-	max-inline-size:1100px ;
 	margin-right: auto;
 	margin-left: auto;
-	
 	margin-top: 0px;
 	margin-bottom: 30px;
-	
+
 }
 
 .presentation_img
@@ -186,7 +183,7 @@ main
 	padding-right: 10px;
 	padding-left: 10px;
 	margin-right: auto;
-	margin-left: auto;	
+	margin-left: auto;
 }
 
 .presentation_text h1
@@ -196,6 +193,7 @@ main
 .presentation_text p
 {
 	text-align: left;
+	line-height : 25px;
 }
 
 /*Services*/
@@ -236,6 +234,7 @@ main
 	margin-right: auto;
 	padding-right: 10px;
 	padding-left: 10px;
+	line-height : 25px;
 }
 .services_list li
 {
@@ -260,7 +259,6 @@ main
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
 	cursor: pointer;
 	background-color: rgb(252, 217, 29);
 	outline:none;
@@ -315,8 +313,6 @@ main
 	list-style-type: none;
 	text-align: center;
 	color: rgb(61, 60, 60);
-	font-size: 22px;
-
 }
 
 .box_list
@@ -334,7 +330,6 @@ main
 
 .box_list li
 {
-	font-size: 14px;
 	margin-top: 12px;
 }
 
