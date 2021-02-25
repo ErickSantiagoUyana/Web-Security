@@ -6,8 +6,7 @@ html
 body
 {
 	font-style: normal;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	background-color: rgb(226, 21, 21);
+	font-family: Helvetica, Verdana, sans-serif;
 	margin-top: 0px;
 	display: flex;
 	flex-direction: column;
@@ -15,10 +14,7 @@ body
 	margin-right: auto;
 	height: 100%;
 }
-
-
 /****************************** NAV ***************************/
-
 
 nav
 {
@@ -28,18 +24,19 @@ nav
 	opacity: 0.98;
 	padding-top: 0px;
 	flex: 0 0 auto;
-
 }
 
 .menu_logo_img
 {
 	height: 80px;
-	width:80px;
+	width: 80px;
 }
 
 .menu_item a
 {
 	text-decoration: none;
+	font-size: 18px;
+	font-weight: normal;
 	color: rgb(36, 36, 36);
 }
 
@@ -165,101 +162,157 @@ nav
 main
 {
 	padding-top: 80px;
-	background-color: rgb(184, 231, 231);
 	flex: 1 0 auto;
 }
-.container_main
+
+/*Presentation*/
+
+.container_presentation
 {
-	margin-top: 15%;
-	margin-bottom: 25%;
+	margin-right: auto;
+	margin-left: auto;
 }
-.main_contact
+
+.presentation_img
+{
+	width: 100%;
+}
+
+.presentation_text
 {
 	max-width: 1100px;
-	height: auto;
+	
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	background-color: rgb(255, 255, 255);
+	border-bottom: solid;
+	border-radius: 1px;
+	border-color: rgba(197, 197, 197, 0.658);
+	
+}
+
+.presentation_text h1
+{
+	text-align: center;
+	color: rgb(36, 36, 36);
+}
+.presentation_text p
+{
+	text-align: left;
+	color: rgb(72, 72, 72);
+	line-height : 25px;
+	font-size: 18px;
+
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+
+/*Services*/
+
+.container_services
+{
+	max-inline-size:1100px ;
 	margin-left: auto;
 	margin-right: auto;
 	
-	margin-bottom: 5%;
-	margin-top: 5%;
-
-	background-color: brown;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: solid;
+	border-color: rgba(211, 210, 210, 0.486);
+	background-color: rgba(255, 244, 181, 0.432);
 
 }
 
-.contact_imput
+.services_text
 {
-	background-color: rgba(49, 240, 11, 0.822);
-	text-align: center;
-	width: auto;
+	max-width: 768px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+	color:  rgb(36, 36, 36);
+	line-height : 25px;
+	font-size: 18px;
 }
 
-.contact_dates
+.services_list li
 {
-	text-align: center;
-	width: auto;
+	margin-bottom: 5px;
 }
+
+
+
+.services_button
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.button_service
+{
+	border: none;
+	border-radius: 25px;	
+	color: rgb(255, 255, 255);
+	line-height : 25px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	
+	
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: rgb(24, 23, 23);
+	outline:none;
+}
+
+
 
 /* Desktop nav_menu */
 @media all and (min-width: 768px)
 {
-	.contact_imput
+	.services_text
 	{
-		background-color: rgb(207, 183, 183);
-		width: 50%;
-		height: 100%;
-	}
-
-	.contact_dates
-	{
-		background-color: rgb(185, 207, 183);
-		width: 50%;
-		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		
 	}
 	
 }
-
-
-.button_services
-{
-	border: none;
-	border-radius: 25px;
-	color: rgb(0, 0, 0);
-	padding: 15px;
-	padding-left: 20%;
-	padding-right: 20%;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-	background-color: rgb(252, 217, 29);
-	outline:none;
-}
-
 
 
 /****************************** FOOTER ***************************/
 
 footer
 {
-	background-color: rgb(255, 255, 0);
+	padding-bottom: 0px;
 	flex: 0 0 auto;
 
 }
 .container_footer
 {
-	max-width: 1100px;
-	background-color: rgba(202, 14, 161, 0);
+	background-color: rgb(227, 228, 231);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	
+	justify-content: space-between;
+	width: 100%;
+	max-inline-size:2000px ;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0px;
 
 }
 

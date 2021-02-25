@@ -6,8 +6,7 @@ html
 body
 {
 	font-style: normal;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	background-color: rgb(226, 21, 21);
+	font-family: Helvetica, Verdana, sans-serif;
 	margin-top: 0px;
 	display: flex;
 	flex-direction: column;
@@ -15,10 +14,7 @@ body
 	margin-right: auto;
 	height: 100%;
 }
-
-
 /****************************** NAV ***************************/
-
 
 nav
 {
@@ -28,18 +24,19 @@ nav
 	opacity: 0.98;
 	padding-top: 0px;
 	flex: 0 0 auto;
-
 }
 
 .menu_logo_img
 {
 	height: 80px;
-	width:80px;
+	width: 80px;
 }
 
 .menu_item a
 {
 	text-decoration: none;
+	font-size: 18px;
+	font-weight: normal;
 	color: rgb(36, 36, 36);
 }
 
@@ -161,105 +158,184 @@ nav
 /****************************** MAIN ***************************/
 
 
-
 main
 {
 	padding-top: 80px;
-	background-color: rgb(184, 231, 231);
+	padding-bottom: 80px;
 	flex: 1 0 auto;
 }
-.container_main
-{
-	margin-top: 15%;
-	margin-bottom: 25%;
-}
+
 .main_contact
 {
+	margin-top: 60px;
 	max-width: 1100px;
-	height: auto;
+	max-height: 500px;
+
 	margin-left: auto;
 	margin-right: auto;
-	
-	margin-bottom: 5%;
-	margin-top: 5%;
-
-	background-color: brown;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 
-}
+	background-color: rgb(216, 213, 12);
 
-.contact_imput
-{
-	background-color: rgba(49, 240, 11, 0.822);
-	text-align: center;
-	width: auto;
 }
 
 .contact_dates
 {
-	text-align: center;
-	width: auto;
-}
-
-/* Desktop nav_menu */
-@media all and (min-width: 768px)
-{
-	.contact_imput
-	{
-		background-color: rgb(207, 183, 183);
-		width: 50%;
-		height: 100%;
-	}
-
-	.contact_dates
-	{
-		background-color: rgb(185, 207, 183);
-		width: 50%;
-		height: 100%;
-	}
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightseagreen;
 	
 }
 
 
-.button_services
+/****************************************************************************************/
+
+
+.contact_form
 {
-	border: none;
-	border-radius: 25px;
-	color: rgb(0, 0, 0);
-	padding: 15px;
-	padding-left: 20%;
-	padding-right: 20%;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-	background-color: rgb(252, 217, 29);
-	outline:none;
+	width: 550px; 
+	height: 600px;
+	border-radius: 10px;
+	background-color: rgb(240, 216, 78);
+	padding-left: 40px; 
 }
 
+input
+{
+	background-color: #fbfbfb;
+	width: 400px;
+	height: 24px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(36, 36, 36, 0.26);
+	margin-top: 2px;
+	padding-left: 10px;
+	margin-bottom: 2px;
+}
+
+textarea
+{
+	background-color: #fbfbfb;
+	width: 400px;
+	height: 50px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(36, 36, 36, 0.26);
+	margin-bottom: 2px;
+}
+
+label
+{
+	display: block;
+	float: center;
+}
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px;   
+	margin-bottom: 5px; 
+	margin-top: 5px;   
+	text-transform: uppercase;
+	background-color:rgb(36, 36, 36);
+	border-color: #131313; 
+	border-style: solid; 
+	border-radius: 10px;  
+	width: 420px;
+	cursor: pointer;
+}
+
+button p
+{
+	color: rgb(255, 255, 255); 
+}
+
+span
+{
+	color: #cc2b2b; 
+}
+
+.aviso
+{
+	font-size: 13px;
+	color: rgb(36, 36, 36);
+}
+
+h1
+{
+	text-align: letf; 
+	color: rgb(36, 36, 36);
+}
+
+h3
+{
+	font-size: 12px; 
+	color:rgb(36, 36, 36); 
+}
+
+p
+{
+	font-size: 14px; 
+	color: rgb(36, 36, 36);
+}
+
+::-webkit-input-placeholder {
+	color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+	color: #a8a8a8;
+}
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #f8cb01;
+}
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #f8cb01;
+}
+
+/****************************************************************************************/
+
+
+
+
+
+
+/* Desktop nav_menu */
+@media all and (min-width: 768px)
+{
+	
+	
+}
 
 
 /****************************** FOOTER ***************************/
 
 footer
 {
-	background-color: rgb(255, 255, 0);
+	padding-bottom: 0px;
 	flex: 0 0 auto;
 
 }
 .container_footer
 {
-	max-width: 1100px;
-	background-color: rgba(202, 14, 161, 0);
+	background-color: rgb(227, 228, 231);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	
+	justify-content: space-between;
+	width: 100%;
+	max-inline-size:2000px ;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0px;
 
 }
 

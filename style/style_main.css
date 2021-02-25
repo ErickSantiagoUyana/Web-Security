@@ -6,8 +6,7 @@ html
 body
 {
 	font-style: normal;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	background-color: rgb(226, 21, 21);
+	font-family: Helvetica, Verdana, sans-serif;
 	margin-top: 0px;
 	display: flex;
 	flex-direction: column;
@@ -15,10 +14,7 @@ body
 	margin-right: auto;
 	height: 100%;
 }
-
-
 /****************************** NAV ***************************/
-
 
 nav
 {
@@ -28,18 +24,19 @@ nav
 	opacity: 0.98;
 	padding-top: 0px;
 	flex: 0 0 auto;
-
 }
 
 .menu_logo_img
 {
 	height: 80px;
-	width:80px;
+	width: 80px;
 }
 
 .menu_item a
 {
 	text-decoration: none;
+	font-size: 18px;
+	font-weight: normal;
 	color: rgb(36, 36, 36);
 }
 
@@ -165,7 +162,6 @@ nav
 main
 {
 	padding-top: 80px;
-	background-color: cyan;
 	flex: 1 0 auto;
 }
 
@@ -175,9 +171,6 @@ main
 {
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 0px;
-	margin-bottom: 30px;
-
 }
 
 .presentation_img
@@ -187,131 +180,146 @@ main
 
 .presentation_text
 {
-	max-inline-size:1000px ;
-	color:rgb(95, 95, 95);
-	padding-right: 20px;
-	padding-left: 20px;
+	max-width: 1100px;
+	
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	background-color: rgb(255, 255, 255);
+	border-bottom: solid;
+	border-radius: 0.1ch;
+	border-color: rgba(197, 197, 197, 0.658);
+	
 }
 
 .presentation_text h1
 {
 	text-align: center;
+	color: rgb(36, 36, 36);
 }
 .presentation_text p
 {
 	text-align: left;
+	color: rgb(72, 72, 72);
 	line-height : 25px;
+	font-size: 18px;
+
+	margin-left: 20px;
+	margin-right: 20px;
+	
 }
 
 /*Services*/
 
+
+
 .container_services
 {
-	max-inline-size:1100px ;
+	width: 100%;
+	background-color: rgb(255, 225, 55);
+	margin-top: 100px;
+}
+
+.container_services h2
+{
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 0;
+
+}
+.description_services
+{
+	
+	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
-	color:rgb(95, 95, 95);
-	font-weight: 300;
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
+	margin-bottom: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-color: rgba(211, 210, 210, 0.486);
+	background-color: rgb(255, 225, 55);
 
-.services_img
-{
-	max-width: 500px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-.img_car
-{
-	height: auto;
-	width: 100%;
 }
 
 .services_text
 {
-	max-inline-size:500px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 20px;
-	padding-left: 20px;
+	max-width: 768px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+	color: rgb(36, 36, 36);
 	line-height : 25px;
+	font-size: 18px;
 }
+
 .services_list li
 {
-	margin: 10px 0px
-}
-.services_select
-{
-	margin-top: 23px;
-	margin-bottom:0px;
-	text-align: center;
+	margin-bottom: 5px;
 }
 
 
-.button_services
-{
-	border: none;
-	border-radius: 25px;
-	color: rgb(0, 0, 0);
-	padding: 15px;
-	padding-left: 20%;
-	padding-right: 20%;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-	background-color: rgb(252, 217, 29);
-	outline:none;
-}
 
-/*Types Services*/
-
-.container_type_services
+.services_button
 {
-	max-width:1100px ;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.services_t
-{
-	max-width: 340px;
-	height: auto;
-	margin-right: auto;
-	margin-left: auto;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.img_s
+.button_service
 {
-	height: 100%;
-	width: 100%;
+	border: none;
+	border-radius: 25px;	
+	color: rgb(255, 255, 255);
+	line-height : 25px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	
+	
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: rgb(24, 23, 23);
+	outline:none;
 }
+
+
+
+/* Desktop nav_menu */
+@media all and (min-width: 768px)
+{
+	.services_text
+	{
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	
+}
+
 
 /****************************** FOOTER ***************************/
 
 footer
 {
-	background-color: chartreuse;
 	padding-bottom: 0px;
 	flex: 0 0 auto;
 
 }
 .container_footer
 {
-	background-color: rgb(242, 243, 248);
+	background-color: rgb(227, 228, 231);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
