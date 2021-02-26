@@ -169,7 +169,6 @@ main
 {
 	margin-top: 60px;
 	max-width: 1100px;
-	max-height: 500px;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -187,7 +186,7 @@ main
 	margin-left: auto;
 	margin-right: auto;
 	background-color: lightseagreen;
-	
+
 }
 
 
@@ -196,31 +195,31 @@ main
 
 .contact_form
 {
-	width: 550px; 
-	height: 600px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 10px;
 	background-color: rgb(240, 216, 78);
-	padding-left: 40px; 
+	padding-left: 20px;
 }
 
 input
 {
 	background-color: #fbfbfb;
-	width: 400px;
+	width: 728px;
 	height: 24px;
 	border-radius: 5px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgba(36, 36, 36, 0.26);
 	margin-top: 2px;
-	padding-left: 10px;
 	margin-bottom: 2px;
 }
 
 textarea
 {
 	background-color: #fbfbfb;
-	width: 400px;
+	width: 40px;
 	height: 50px;
 	border-radius: 5px;
 	border-style: solid;
@@ -236,28 +235,28 @@ label
 }
 
 button{
-	height: 45px; 
+	height: 45px;
 	padding-left: 5px;
-	padding-right: 5px;   
-	margin-bottom: 5px; 
-	margin-top: 5px;   
+	padding-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 	text-transform: uppercase;
 	background-color:rgb(36, 36, 36);
-	border-color: #131313; 
-	border-style: solid; 
-	border-radius: 10px;  
+	border-color: #131313;
+	border-style: solid;
+	border-radius: 10px;
 	width: 420px;
 	cursor: pointer;
 }
 
 button p
 {
-	color: rgb(255, 255, 255); 
+	color: rgb(255, 255, 255);
 }
 
 span
 {
-	color: #cc2b2b; 
+	color: #cc2b2b;
 }
 
 .aviso
@@ -268,19 +267,19 @@ span
 
 h1
 {
-	text-align: letf; 
+	text-align: letf;
 	color: rgb(36, 36, 36);
 }
 
 h3
 {
-	font-size: 12px; 
-	color:rgb(36, 36, 36); 
+	font-size: 12px;
+	color:rgb(36, 36, 36);
 }
 
 p
 {
-	font-size: 14px; 
+	font-size: 14px;
 	color: rgb(36, 36, 36);
 }
 
@@ -312,8 +311,8 @@ p
 /* Desktop nav_menu */
 @media all and (min-width: 768px)
 {
-	
-	
+
+
 }
 
 
@@ -373,5 +372,5 @@ footer
 		width: 33%;
 		list-style-type: none;
 	}
-	
+
 }
