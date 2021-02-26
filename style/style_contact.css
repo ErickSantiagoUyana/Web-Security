@@ -24,6 +24,9 @@ nav
 	opacity: 0.98;
 	padding-top: 0px;
 	flex: 0 0 auto;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.103);
 }
 
 .menu_logo_img
@@ -165,9 +168,9 @@ main
 	flex: 1 0 auto;
 }
 
-.main_contact
+.container_form
 {
-	margin-top: 60px;
+	margin-top: 20px;
 	max-width: 1100px;
 
 	margin-left: auto;
@@ -176,17 +179,17 @@ main
 	flex-direction: row;
 	flex-wrap: wrap;
 
-	background-color: rgb(216, 213, 12);
 
 }
 
 .contact_dates
 {
-	width: 300px;
+	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: lightseagreen;
-
+	border-radius: 20px;
+	background-color: rgb(241, 220, 24);
+	text-align: center;
 }
 
 
@@ -198,63 +201,72 @@ main
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-color: rgb(240, 216, 78);
-	padding-left: 20px;
+	text-align: center;
 }
 
-input
+.form input
 {
 	background-color: #fbfbfb;
-	width: 728px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 24px;
+
+	margin-top: 2px;
+	margin-bottom: 2px;
+
 	border-radius: 5px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgba(36, 36, 36, 0.26);
-	margin-top: 2px;
-	margin-bottom: 2px;
+
+	
 }
 
-textarea
+.form textarea
 {
 	background-color: #fbfbfb;
-	width: 40px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
 	height: 50px;
 	border-radius: 5px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgba(36, 36, 36, 0.26);
-	margin-bottom: 2px;
+	margin-top: 2px;
 }
 
-label
+.form label
 {
 	display: block;
 	float: center;
+	text-align: left;
+	padding-left: 5%;
 }
 
-button{
+.form button
+{
 	height: 45px;
-	padding-left: 5px;
-	padding-right: 5px;
+	align-items: center;
 	margin-bottom: 5px;
 	margin-top: 5px;
+	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	background-color:rgb(36, 36, 36);
 	border-color: #131313;
 	border-style: solid;
 	border-radius: 10px;
-	width: 420px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 	cursor: pointer;
 }
 
-button p
-{
-	color: rgb(255, 255, 255);
-}
-
-span
+.form span
 {
 	color: #cc2b2b;
 }
@@ -265,48 +277,41 @@ span
 	color: rgb(36, 36, 36);
 }
 
-h1
+.formulario h3
 {
-	text-align: letf;
-	color: rgb(36, 36, 36);
+	text-align: left;
+	padding-left: 5%;
+	font-size: 16px;
 }
-
-h3
-{
-	font-size: 12px;
-	color:rgb(36, 36, 36);
-}
-
-p
+.form p
 {
 	font-size: 14px;
 	color: rgb(36, 36, 36);
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder
+{
 	color: #a8a8a8;
 }
 
-::-webkit-textarea-placeholder {
+::-webkit-textarea-placeholder
+{
 	color: #a8a8a8;
 }
 
-.formulario input:focus{
+.formulario input:focus
+{
 	outline:0;
 	border: 1px solid #f8cb01;
 }
 
-.formulario textarea:focus{
+.formulario textarea:focus
+{
 	outline:0;
 	border: 1px solid #f8cb01;
 }
 
 /****************************************************************************************/
-
-
-
-
-
 
 /* Desktop nav_menu */
 @media all and (min-width: 768px)

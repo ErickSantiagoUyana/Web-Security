@@ -24,6 +24,9 @@ nav
 	opacity: 0.98;
 	padding-top: 0px;
 	flex: 0 0 auto;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.103);
 }
 
 .menu_logo_img
