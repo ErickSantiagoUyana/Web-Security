@@ -32,7 +32,7 @@ nav
 .menu_logo_img
 {
 	height: 80px;
-	width: 80px;
+	width: auto;
 }
 
 .menu_item a
@@ -112,7 +112,7 @@ nav
 .toggle_bars:before,
 .toggle_bars:after
 {
-	background-color: rgb(240, 216, 78);
+	background-color:  rgb(255, 217, 0);
 	content: '';
 	display: block;
 	height: 100%;
@@ -164,7 +164,7 @@ nav
 
 main
 {
-	padding-top: 80px;
+	margin-top: 80px;
 	flex: 1 0 auto;
 }
 
@@ -176,14 +176,17 @@ main
 	margin-left: auto;
 }
 
-.presentation_img
+.main_img
 {
 	width: 100%;
+	
 }
+
 
 .presentation_text
 {
 	max-width: 1100px;
+	
 	
 	margin-right: auto;
 	margin-left: auto;
@@ -219,7 +222,7 @@ main
 .container_services
 {
 	width: 100%;
-	background-color: rgb(255, 225, 55);
+	background-color: rgb(250, 218, 28);
 	margin-top: 100px;
 }
 
@@ -244,7 +247,6 @@ main
 	padding-top: 20px;
 	padding-bottom: 20px;
 	border-color: rgba(211, 210, 210, 0.486);
-	background-color: rgb(255, 225, 55);
 
 }
 
