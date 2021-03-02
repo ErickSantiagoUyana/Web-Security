@@ -216,8 +216,6 @@ main
 
 /*Services*/
 
-
-
 .container_services
 {
 	width: 100%;
@@ -300,6 +298,7 @@ main
 
 
 /* Desktop nav_menu */
+
 @media all and (min-width: 768px)
 {
 	.services_text
@@ -368,5 +367,5 @@ footer
 		width: 33%;
 		list-style-type: none;
 	}
-	
+
 }
