@@ -41,12 +41,22 @@ nav
 	font-size: 18px;
 	font-weight: normal;
 	color: rgb(36, 36, 36);
+	
 }
 
-.nav_menu li
+.item_1
 {
-	white-space: nowrap;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(250, 218, 28);
 }
+
+.menu_item a:hover
+{
+	color: rgb(250, 218, 28);
+}
+
+
 
 /* Mobile nav_menu */
 
@@ -75,16 +85,14 @@ nav
 .menu_item
 {
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	order: 2;
 	display: none;
 	text-align: center;
-	border-style:inset;
-	border-left: none;
-	border-right: none;
-	border-width: 1px;
 }
+
+
 
 .menu_logo
 {
@@ -112,7 +120,7 @@ nav
 .toggle_bars:before,
 .toggle_bars:after
 {
-	background-color:  rgb(255, 217, 0);
+	background-color: rgb(250, 218, 28);
 	content: '';
 	display: block;
 	height: 100%;
@@ -176,7 +184,7 @@ main
 	margin-left: auto;
 }
 
-.main_img
+.presentation_img
 {
 	width: 100%;
 	
@@ -195,7 +203,7 @@ main
 
 	background-color: rgb(255, 255, 255);
 	border-bottom: solid;
-	border-radius: 0.1ch;
+	border-width: 1px;
 	border-color: rgba(197, 197, 197, 0.658);
 	
 }
@@ -203,7 +211,7 @@ main
 .presentation_text h1
 {
 	text-align: center;
-	color: rgb(36, 36, 36);
+	color: rgba(36, 36, 36, 0.89);
 }
 .presentation_text p
 {
@@ -217,7 +225,50 @@ main
 	
 }
 
-/*Services*/
+/*************************************Customer************************************/
+
+.container_customers
+{
+	max-width: 1100px;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: rgba(197, 197, 197, 0.658);
+	
+}
+.container_customers h2
+{
+	text-align: center;
+	padding-top: 20px;
+	color: rgba(109, 108, 100, 0.952);;
+}
+.customers_img
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+/* Desktop main-customers */
+
+@media all and (min-width: 768px)
+{
+	.customers_img
+	{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	
+}
+
+/*************************************Services************************************/
 
 .container_services
 {
@@ -225,6 +276,8 @@ main
 	background-color: rgb(250, 218, 28);
 	margin-top: 100px;
 }
+
+
 
 .container_services h2
 {
@@ -246,7 +299,7 @@ main
 	margin-bottom: 60px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	border-color: rgba(211, 210, 210, 0.486);
+	
 
 }
 
@@ -270,7 +323,9 @@ main
 
 .services_button
 {
+	
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-left: auto;
@@ -299,7 +354,7 @@ main
 
 
 
-/* Desktop nav_menu */
+/* Desktop main */
 
 @media all and (min-width: 768px)
 {
@@ -361,7 +416,7 @@ footer
 	margin-top: 12px;
 }
 
-/* Desktop nav_menu */
+/* Desktop footer */
 @media all and (min-width: 768px)
 {
 	.footer_box

@@ -41,12 +41,22 @@ nav
 	font-size: 18px;
 	font-weight: normal;
 	color: rgb(36, 36, 36);
+	
 }
 
-.nav_menu li
+.item_4
 {
-	white-space: nowrap;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(250, 218, 28);
 }
+
+.menu_item a:hover
+{
+	color: rgb(250, 218, 28);
+}
+
+
 
 /* Mobile nav_menu */
 
@@ -75,16 +85,14 @@ nav
 .menu_item
 {
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	order: 2;
 	display: none;
 	text-align: center;
-	border-style:inset;
-	border-left: none;
-	border-right: none;
-	border-width: 1px;
 }
+
+
 
 .menu_logo
 {
@@ -112,7 +120,7 @@ nav
 .toggle_bars:before,
 .toggle_bars:after
 {
-	background-color:rgb(250, 218, 28);
+	background-color: rgb(250, 218, 28);
 	content: '';
 	display: block;
 	height: 100%;
@@ -400,7 +408,7 @@ footer
 	margin-top: 12px;
 }
 
-/* Desktop nav_menu */
+/* Desktop footer */
 @media all and (min-width: 768px)
 {
 	.footer_box

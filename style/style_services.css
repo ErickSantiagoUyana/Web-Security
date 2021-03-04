@@ -41,12 +41,22 @@ nav
 	font-size: 18px;
 	font-weight: normal;
 	color: rgb(36, 36, 36);
+	
 }
 
-.nav_menu li
+.item_2
 {
-	white-space: nowrap;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(250, 218, 28);
 }
+
+.menu_item a:hover
+{
+	color: rgb(250, 218, 28);
+}
+
+
 
 /* Mobile nav_menu */
 
@@ -75,16 +85,14 @@ nav
 .menu_item
 {
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	order: 2;
 	display: none;
 	text-align: center;
-	border-style:inset;
-	border-left: none;
-	border-right: none;
-	border-width: 1px;
 }
+
+
 
 .menu_logo
 {
