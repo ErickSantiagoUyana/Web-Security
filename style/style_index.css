@@ -22,6 +22,7 @@ nav
 	position: fixed;
 	background-color:rgb(255, 255, 255);
 	opacity: 0.98;
+	z-index:2;
 	padding-top: 0px;
 	flex: 0 0 auto;
 	border-bottom: solid;
@@ -176,96 +177,58 @@ main
 	flex: 1 0 auto;
 }
 
-/*Presentation*/
+main h2
+{
+	/*rgb(36, 36, 36);*/
+	font-weight:inherit;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 0.01%;
+	border-left: solid;
+	border-right: solid;
+	border-width: 5px;
+	border-color: rgb(36, 36, 36);
+	color:rgb(36, 36, 36);
+	text-align: center;
+}
+/****************************** Presentation ***************************/
 
 .container_presentation
 {
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 100px;
 }
 
 .presentation_img
 {
 	width: 100%;
-	
 }
-
 
 .presentation_text
 {
 	max-width: 1100px;
-	
-	
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-
 	background-color: rgb(255, 255, 255);
 	border-bottom: solid;
+	border-top: solid;
 	border-width: 1px;
 	border-color: rgba(197, 197, 197, 0.658);
 	
 }
 
-.presentation_text h1
-{
-	text-align: center;
-	color: rgba(36, 36, 36, 0.89);
-}
 .presentation_text p
 {
 	text-align: left;
-	color: rgb(72, 72, 72);
+	color: rgba(36, 36, 36, 0.8);
 	line-height : 25px;
-	font-size: 18px;
-
+	font-size: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
-	
-}
-
-/*************************************Customer************************************/
-
-.container_customers
-{
-	max-width: 1100px;
-	display: flex;
-	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 20px;
-	border-bottom: solid;
-	border-width: 1px;
-	border-color: rgba(197, 197, 197, 0.658);
-	
-}
-.container_customers h2
-{
-	text-align: center;
-	padding-top: 20px;
-	color: rgba(109, 108, 100, 0.952);;
-}
-.customers_img
-{
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-/* Desktop main-customers */
-
-@media all and (min-width: 768px)
-{
-	.customers_img
-	{
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
-
-	}
-	
 }
 
 /*************************************Services************************************/
@@ -273,86 +236,92 @@ main
 .container_services
 {
 	width: 100%;
-	background-color: rgb(250, 218, 28);
-	margin-top: 100px;
+	background-color:rgb(54, 53, 48);
+	margin-bottom: 100px;
 }
 
-
-
-.container_services h2
-{
-	text-align: center;
-	padding-top: 20px;
-	margin-bottom: 0;
-
-}
 .description_services
 {
-	
+	background-color: rgb(250, 218, 28);
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
-	
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-bottom: 60px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	
+	flex-direction: column;
+}
 
+.services_img
+{
+	max-width: 800px;
+	margin: auto auto;
+}
+
+.img_mc
+{
+	max-width: 60%;
+	display: block;
+	margin: auto;
 }
 
 .services_text
 {
-	max-width: 768px;
-	margin-left: 20px;
-	margin-right: 20px;
-
-	color: rgb(36, 36, 36);
+	max-width: 800px;
+	color: rgb(0, 0, 0);
 	line-height : 25px;
 	font-size: 18px;
+	padding:0px 20px 0px 20px;
 }
-
+.services_list
+{
+	margin-bottom: 15px;
+}
 .services_list li
 {
-	margin-bottom: 5px;
+	margin-top: 5px;
 }
-
-
-
 .services_button
 {
-	
+	width: 80%;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
-.button_service
+.services_button a
 {
+	max-width: 280px;
+	width: 100%;
 	border: none;
-	border-radius: 25px;	
+	border-radius: 25px;
 	color: rgb(255, 255, 255);
 	line-height : 25px;
 	font-size: 18px;
 	font-weight: bold;
 	padding: 15px;
-	
-	
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
-	background-color: rgb(24, 23, 23);
 	outline:none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
+.button_service_1
+{
+	background-color:#000000;
 
+}
+
+.button_service_2
+{
+	background-color:#06a08b;
+
+}
 
 /* Desktop main */
 
@@ -367,6 +336,60 @@ main
 	
 }
 
+/*************************************Customer************************************/
+
+.container_customers
+{
+	max-width: 1100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-top: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: rgba(197, 197, 197, 0.658);
+	align-content: center;
+}
+
+.container_img
+{
+	width: 100%;
+	max-height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	justify-content:space-between;
+}
+
+.customers
+{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.c_img
+{
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	filter: grayscale(100%);
+}
+
+.c_img:hover
+{
+	filter: grayscale(0%);
+}
 
 /****************************** FOOTER ***************************/
 
@@ -374,7 +397,7 @@ footer
 {
 	padding-bottom: 0px;
 	flex: 0 0 auto;
-
+	
 }
 .container_footer
 {
@@ -384,7 +407,7 @@ footer
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
-	max-inline-size:2000px ;
+	
 	margin-left: auto;
 	margin-right: auto;
 
@@ -398,6 +421,8 @@ footer
 	color: rgb(61, 60, 60);
 }
 
+
+
 .box_list
 {
 	list-style-type: none;
@@ -408,12 +433,13 @@ footer
 {
 	text-decoration: none;
 	color: rgb(65, 65, 65);
-	margin-bottom: auto;
+	
 }
 
 .box_list li
 {
-	margin-top: 12px;
+	padding-bottom: 40px;
+	
 }
 
 /* Desktop footer */
