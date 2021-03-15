@@ -13,4 +13,4 @@ Services:
 
 Contact:
 
-<img src="git/s_3.png"/>
+<img src="git/2_3.png"/>
